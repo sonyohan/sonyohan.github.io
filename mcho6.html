@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.clear{
+		clear: both;
+	}
+	header{
+		width: 1000px;
+		height: 100px;
+		
+		border: none;
+		margin-bottom: 20px;
+		
+	}
+	#logo{
+		margin-top: 20px;
+
+		
+		
+
+	}
+	#top{
+		float: right;
+		margin: 30px 20px 0 0;
+
+	}
+	nav{
+		width: 1000px;
+		height: 50px;
+		border: none;
+		padding-top: 20px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 40px;
+
+		
+	}
+	nav ul{
+		display: inline; /*가로로 보여주겠다*/
+		display: block;
+		padding: 0px 50px;
+	}
+
+
+	li{
+		list-style-type: none;
+	}
+	.li{
+		display: inline-block;
+		position: absolute;/*옆으로*/
+		width: 800px;
+	}
+	.dropdown{
+			display: inline-block;
+		}
+		.dropdownContents{
+			display: none;/*처음에 display none 하면 안보인다*/
+			background-image: linear-gradient(to bottom,white,yellow);
+			position: absolute;/*옆으로*/
+			width: auto;
+			padding: 20px 20px;
+			border-radius: 10px;
+		}
+		.dropdown:hover .dropdownContents{
+			display: block;
+		}
+
+	section{
+width: auto;
+		float: left;
+		margin-top: 10px;
+		border: none;
+		border-radius: 10px;
+		padding: 20px 20px;
+		background-color: #fff;
+		
+	}
+	#section1{
+width:750px;
+height:auto;
+float: right;
+border: none;
+border-radius: 10px;
+
+}
+#section{
+width:auto;
+height:auto;
+margin-right: 10px;
+border: 1px solid black;
+border-radius: 10px;
+}
+
+	aside{
+		width: auto;
+		height: 250px;
+		float: left;
+		margin-right: 20px; 
+		margin-top: 10px;
+		border: none;
+		border-radius: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: #fff;
+	}
+	aside li{
+		margin-bottom: 20px; 
+	}
+	footer{
+		width: 1000px;
+		height: 150px;
+		
+		margin-top: 10px;
+		border: none;
+		
+
+	}
+	#address{
+		float: left;
+		margin: 30px 0 0 20px;
+	}
+	#customer{
+		float: right;
+		margin: 30px 0 0 180px;
+	}
+	#page{
+		width: 1000px;
+		margin: auto;
+
+		
+	}
+	h3{
+		float: left;
+	}
+	/*'더 보기' 링크 설정*/
+	.more{
+		text-align:right;
+	}
+
+/*링크 색상 설정*/
+a{
+text-decoration: none;
+}
+a:hover{
+color:#ff705b;
+}
+
+
+
+.data{
+float:left;
+}
+/*정보 데이터 표제 설정*/
+dt{
+clear: left;
+float: left;
+font-weight: bold;
+}
+		#backGrod{
+			background-image: linear-gradient(white,skyblue,white);
+		}
+		div.skew{
+			transform: skew(-5deg,-5deg);
+		}
+		div.skew1{
+			transform: skew(-5deg,-5deg);
+		}
+		div.skew2{
+			transform: skew(-5deg,-5deg);
+		}
+		div.skew3{
+			transform: skew(-5deg,-5deg);
+		}
+		#div1{
+			width: 100px;
+			height: 100px;
+			transition: width 2s,height 2s, transform 2s;/*2ch*/
+			transition-timing-function:linear;
+		}
+		#div1:hover{
+			width: 300px;
+			height: 300px;
+			font-size: 30px;
+			transition-delay: 0.5s;
+		}
+</style>
+</head>
+<body id="backGrod">
+
+	<div id="page">
+	<header>
+		<div id="logo">
+			<a href="index.html"><img src="./img/ex.jpg" width="100" height="100"></a>
+		</div>
+		
+	
+	</header>
+
+
+
+	<div class="clear"></div><!-- float 속성 해제 -->
+	<nav>
+		<div class="dropdown">
+	<ul>프리웨이트
+		<div class="dropdownContents">
+		<a href="hcho1.html"><li>가슴</li></a>
+		<a href="hcho2.html"><li>등</li></a>
+		<li>어깨</li>
+		<a href="hcho3.html"><li>하체</li></a>
+		<li>복근</li>
+	</div>
+</ul>
+</div>
+
+	<div class="dropdown">
+	<ul>맨몸운동
+		<div class="dropdownContents">
+		<a href="fcho4.html"><li>가슴</li></a>
+		<a href="fcho5.html"><li>등</li></a>
+		<li>어깨</li>
+		<li>하체</li>
+		<a href="bokg.html"><li>복근</li></a>
+	</div>
+</ul>
+</div>
+	
+<div class="dropdown">
+	<ul>웨이트머신
+		<div class="dropdownContents">
+		<li>가슴</li>
+		<li>등</li>
+		<a href="mcho6.html"><li>어깨</li></a>
+		<li>하체</li>
+		<li>복근</li>
+	</div>
+</ul>
+</div>
+	<div class="dropdown">
+	<ul>스트레칭
+		<div class="dropdownContents">
+		<a href="mcho7.html"><li>정적스트레칭</li></a>
+		<a href="mcho8.html"><li>동적스트레칭</li></a>
+		<li>전 수축 후 스트레칭</li>
+	</div>
+</ul>
+</div>
+	
+	</nav>
+	<div class="clear"></div><!-- float 속성 해제 -->
+	<aside>
+		<ul><strong>웨이트머신</strong>
+		<li>가슴</li>
+		<li>등</li>
+		<a href="mcho6.html"><li>어깨</li></a>
+		<li>하체</li>
+		<li>복근</li>
+	
+</ul>
+	</aside>
+<section id="section1"><table>
+<tr><td>
+숄더프레스</p>
+<img src="./img/shoulder.PNG" width="300" height="300"></td><td>
+<dl class="data">
+<dt>특징</dt><dd><br>머신에 앉아 엉덩이와 어깨를 벤치에 밀착시킨다.<br>어깨너비 두 배 정도로 양손을 벌린 상태에서 손바닥이 앞을 향하도록 바를 잡는다.<br>손으로 밀지 말고 어깨로 드는 느낌으로 중량을 밀어 올린다.<br>저항을 느끼면서 서서히 바가 귀와 평행하게 될 때까지 내린다.</dd> </dl></td>
+
+</tr>
+
+</table>
+
+
+
+	</section>
+	
+
+
+	<div class="clear"></div><!-- float 속성 해제 -->
+	<footer>
+		<div id="address">
+
+			이용약관 | 개인정보처리방침 | 운영정책 | 청소년보호정책
+
+<address>
+<p>대표이사: 손요한
+<p>주소: 서울시 성북구 솔샘로25길 11-11 128-701
+<p> E-MAIL: syh005@naver.com TEL: 00-5091-7524
+</address>
+		</div>
+
+		
+	</footer>
+</div>
+</div>
+</body>
+</html>
